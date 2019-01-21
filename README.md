@@ -36,6 +36,11 @@ If `test` is the name of the executable compiled from new_test.c, then `./test n
 
 The test file `single_function_test.c`can be used to manually test a single function in a single data set.
 
+## Languages
+
+- C: Apple LLVM version 7.0.2 (clang-700.1.81)
+- Python: 3.7.0
+
 ## Bibliography
 
 <a id="#bib1">1</a>: Cicalese, Fernando, Laber, Eduardo, and Murtinho, Lucas. New results on information-theoretic clustering. 2019.
