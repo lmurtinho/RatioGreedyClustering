@@ -38,7 +38,6 @@ The test file `single_function_test.c`can be used to manually test a single func
 
 ## Bibliography
 
+<a id="#bib1">1</a>: Cicalese, Fernando, Laber, Eduardo, and Murtinho, Lucas. New results on information-theoretic clustering. 2019.
 
-<a name="#bib1">1</a>: Cicalese, Fernando, Laber, Eduardo, and Murtinho, Lucas. New results on information-theoretic clustering. 2019.
-
-<a name="#bib2">2</a>: Dhillon, Inderjit S., Mallela, Subramanyam, and Kumar, Rahul. A divisive information-theoretic feature clustering algorithm for text classification. *Journal of Machine Learning Research*, 3:1265-1287, 2003.
+<a id="#bib2">2</a>: Dhillon, Inderjit S., Mallela, Subramanyam, and Kumar, Rahul. A divisive information-theoretic feature clustering algorithm for text classification. *Journal of Machine Learning Research*, 3:1265-1287, 2003.
