@@ -1,7 +1,7 @@
-#include "helper_functions.h"
-#include "random_functions.h"
-#include "dominance.h"
-#include "dhillon.h"
+#include "helper/helper_functions.h"
+#include "helper/random_functions.h"
+#include "dhillon/dhillon.h"
+#include "dominance/dominance.h"
 #include <stdio.h>
 
 int main () {
@@ -22,11 +22,11 @@ int main () {
 
   FILE *results, *f;
 
-  results = fopen("dom_heap_rcv1_results_sun2.csv", "w");
+  results = fopen("rg_rcv1_results.csv", "w");
   fprintf(results, "n_clusters,time,entropy,iterations");
   //fclose(times);
 
-  f = fopen("dom_heap.csv", "w");
+  f = fopen("rg.csv", "w");
 
   for (i = 0; i < size_k; i++) {
     k = k_list[i];
