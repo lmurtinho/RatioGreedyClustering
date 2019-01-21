@@ -91,7 +91,6 @@ int main (int argc, char *argv[]) {
   free(data);
   free(clusters);
   free(assigned);
-  free(name);
   free(iters_file_name);
   free(times_file_name);
   free(entrs_file_name);
