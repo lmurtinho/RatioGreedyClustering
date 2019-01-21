@@ -1,7 +1,7 @@
-#include "helper_functions.h"
-#include "random_functions.h"
-#include "dhillon.h"
-#include "dominance.h"
+#include "helper/helper_functions.h"
+#include "helper/random_functions.h"
+#include "dhillon/dhillon.h"
+#include "dominance/dominance.h"
 #include <stdio.h>
 
 int main (int argc, char *argv[]) {

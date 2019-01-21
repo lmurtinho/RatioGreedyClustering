@@ -1,7 +1,7 @@
 #ifndef DHILLON_FUNCTIONS
 #define DHILLON_FUNCTIONS
 
-#include "helper_functions.h"
+#include "../helper/helper_functions.h"
 
 // find cluster of vector v in dominance algorithm
 int get_cluster(double *v, int *le, int dim, int k) {

@@ -247,7 +247,7 @@ char *concat (char *s1, char *s2) {
 
 #include "sorting_functions.h"
 #include "entropy_functions.h"
-#include "dhillon_functions.h"
+// #include "dhillon_functions.h"
 #include "printing_functions.h"
 
 

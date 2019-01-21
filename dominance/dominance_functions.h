@@ -1,7 +1,7 @@
 #ifndef DOMINANCE_FUNCTIONS
 #define DOMINANCE_FUNCTIONS
 
-#include "helper_functions.h"
+#include "../helper/helper_functions.h"
 
 // Makes first pass at data for dominance clustering when k >= d
 void dom_first_pass(double *data, double *clusters, int *assigned,
