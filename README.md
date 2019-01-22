@@ -14,7 +14,7 @@ The implementations are tested in two data sets: the 20 newsgroup data set avail
 
 ## Retrieving data
 
-The data used for the tests presented in Cicalese, Laber, and Murtinho (2019) can be retrieved and saved via the `make_ng20_data.py`and `make_rcv1_data.py` files. The ng20 dataset will be downloaded from scikit-learn, while the files used to prepare the csv files must be downloaded from the RCV1-v2 website:
+The data used for the tests presented in Cicalese, Laber, and Murtinho (2019) can be retrieved and saved via the `make_ng20_data.py`and `make_rcv1_data.py` files. The ng20 dataset will be downloaded from scikit-learn, while the files used to prepare the csv files must be downloaded from the RCV1-v2 website [3](#bib3):
 
 - http://www.ai.mit.edu/projects/jmlr/papers/volume5/lewis04a/a08-topic-qrels/rcv1-v2.topics.qrels.gz
 - http://www.ai.mit.edu/projects/jmlr/papers/volume5/lewis04a/a12-token-files/lyrl2004_tokens_test_pt0.dat.gz
@@ -43,6 +43,8 @@ The test file `single_function_test.c`can be used to manually test a single func
 
 ## Bibliography
 
-<a id="#bib1">1</a>: Cicalese, Ferdinando, Laber, Eduardo, and Murtinho, Lucas. New results on information-theoretic clustering. 2019.
+<a id="bib1">1</a>: Cicalese, Ferdinando, Laber, Eduardo, and Murtinho, Lucas. New results on information-theoretic clustering. 2019.
 
-<a id="#bib2">2</a>: Dhillon, Inderjit S., Mallela, Subramanyam, and Kumar, Rahul. A divisive information-theoretic feature clustering algorithm for text classification. *Journal of Machine Learning Research*, 3:1265-1287, 2003.
+<a id="bib2">2</a>: Dhillon, Inderjit S., Mallela, Subramanyam, and Kumar, Rahul. A divisive information-theoretic feature clustering algorithm for text classification. *Journal of Machine Learning Research*, 3:1265-1287, 2003.
+
+<a id="bib3">3</a>: Lewis, David D.  RCV1-v2/LYRL2004: The LYRL2004 Distribution of the RCV1-v2 Text Categorization Test Collection (12-Apr-2004 Version). http://www.jmlr.org/papers/volume5/lewis04a/lyrl2004_rcv1v2_README.htm.
