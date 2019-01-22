@@ -27,7 +27,7 @@ The files must be downloaded and unzipped in the folder from which `make_rcv1_da
 
 ## Testing
 
-The test file `main_test.c` tests all three algorithms on a single data set for 29 different numbers of clusters (from 2 to 2000). Run from command line as `./test dname n_rows n_cols`:
+The test file `main_test.c` tests all three algorithms on a single data set for 29 different numbers of clusters (from 2 to 2000). Compile as `cc -o test main_test.c` and run from command line as `./test dname n_rows n_cols`:
 - `dname`: filename of the csv file with the data set on which the function will be tested (without the `.csv` extension)
 - `n_rows`: the humber of rows in the csv file
 - `n_cols`: the number of cols in the csv file
