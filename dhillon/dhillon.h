@@ -9,13 +9,6 @@ bool expectation(double *norm_data, double *data_logs,
   int i, j, curr, new;
   double dist, d, c_sum;
 
-  // for (i = 0; i < k; i++) {
-  //   c_sum = sum(&clusters[i*dim], dim);
-  //   if ( c_sum <= 0) {
-  //     printf("sum of cluster %d = %f\n", i, c_sum);
-  //   }
-  // }
-
   double* cluster_logs = get_logs(clusters, k, dim);
   int *vecs_per_cluster = (int *)malloc(sizeof(int)*k);
   fill_array_int(vecs_per_cluster, 0, k);

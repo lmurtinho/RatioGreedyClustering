@@ -1,8 +1,6 @@
 #ifndef HELPER_FUNCTIONS
 #define HELPER_FUNCTIONS
 
-
-
 #include <math.h>
 #include <stdbool.h>
 #include <stdio.h>
@@ -22,6 +20,16 @@ typedef struct HEAP {
   int prev;
   int next;
 } HEAP;
+
+double *cum_sum(double *a, int dim) {
+  int i;
+  double *ans = (double *)malloc(sizeof(double) * dim);
+  ans[0] = a[0];
+  for (i = 1; i < dim; i++) {
+    ans[i] = ans[i-1] + a[i];
+  }
+  return ans;
+}
 
 // Returns the sum of elements in an array
 double sum(double *v, int dim) {
@@ -242,6 +250,16 @@ char *concat (char *s1, char *s2) {
   strcpy(ans, s1);
   strcat(ans, s2);
   ans[size-1] = '\0';
+  return ans;
+}
+
+double *get_indices(double *original, int *indices, int n, int dim, int k) {
+  int i, idx;
+  double *ans = (double *)malloc(sizeof(double) * k * dim);
+  for (i = 0; i < k; i++) {
+    idx = indices[i];
+    copy_to(&original[idx * dim], &ans[i * dim], dim);
+  }
   return ans;
 }
 
