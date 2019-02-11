@@ -154,8 +154,10 @@ int* coreset_clustering(double *data, int n, int k, int dim, int m,
   double *norm_data = get_norm_data(data, n, dim),
          *data_logs = get_logs_from_normal(norm_data, n * dim),
          *clusters  = (double *)malloc(sizeof(double) * k * dim);
+
   int *coreset_indices = coreset_construction(data, norm_data, data_logs,
     clusters, n, k, dim, m);
+
   double *coreset_data = get_indices(data, coreset_indices, n, dim, m);
   double *coreset_norm = get_indices(norm_data, coreset_indices, n, dim, m);
   double *coreset_logs = get_indices(data_logs, coreset_indices, n, dim, m);

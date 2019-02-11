@@ -2,4 +2,4 @@ maint
 .DS_Store
 ng20.csv
 rcv1.csv
-./maint.dSYM
+maint.dSYM/**
