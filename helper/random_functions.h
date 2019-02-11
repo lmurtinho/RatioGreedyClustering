@@ -1,3 +1,7 @@
+int random_number(int max_number) {
+  return rand() % max_number;
+}
+
 int find_next_number(double *probs, int n) {
   double r = (double)rand() / (double)(RAND_MAX);
   double sum_probs = 0;
