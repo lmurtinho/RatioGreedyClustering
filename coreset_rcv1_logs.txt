@@ -1,0 +1,838 @@
+With 1000 clusters
+Set up in 0.960765 seconds
+Set up in 0.000014 seconds
+++ initialization in 102.754092 seconds
+First assignment in 98.531336 seconds
+Distances in 0.001175 seconds
+Average distance in 0.000669 seconds
+Sensitivities in 0.003381 seconds
+Freed arrays in 0.000026 seconds
+Calculated sensitivities in 201.290872 seconds
+Random sampling in 9.885165 seconds
+Found coreset indices in 211.176074 seconds
+Built coreset arrays in 0.056338 seconds
+Ran k-means in coreset in 49.290270 seconds
+Assigned whole set in 98.451396 seconds
+Freed data in 0.024849 seconds
+0 elements with invalid clusters
+0 clusters with no elements
+time: 359.959937 seconds	entropy: 4.532818	iters: 16
+
+
+With 1000 clusters
+Set up in 0.685798 seconds
+Set up in 0.000016 seconds
+++ initialization in 103.314804 seconds
+First assignment in 98.276700 seconds
+Distances in 0.001255 seconds
+Average distance in 0.000648 seconds
+Sensitivities in 0.003450 seconds
+Freed arrays in 0.000012 seconds
+Calculated sensitivities in 201.597027 seconds
+Random sampling in 9.904565 seconds
+Found coreset indices in 211.501629 seconds
+Built coreset arrays in 0.048786 seconds
+Ran k-means in coreset in 46.881891 seconds
+Assigned whole set in 103.480446 seconds
+Freed data in 0.036800 seconds
+0 elements with invalid clusters
+0 clusters with no elements
+time: 362.635584 seconds	entropy: 4.532570	iters: 15
+
+
+With 1000 clusters
+Set up in 0.705112 seconds
+Set up in 0.000020 seconds
+++ initialization in 103.165770 seconds
+First assignment in 97.393568 seconds
+Distances in 0.002900 seconds
+Average distance in 0.000642 seconds
+Sensitivities in 0.003661 seconds
+Freed arrays in 0.000159 seconds
+Calculated sensitivities in 200.566930 seconds
+Random sampling in 9.986933 seconds
+Found coreset indices in 210.553910 seconds
+Built coreset arrays in 0.074774 seconds
+Ran k-means in coreset in 39.987376 seconds
+Assigned whole set in 97.843230 seconds
+Freed data in 0.027118 seconds
+0 elements with invalid clusters
+0 clusters with no elements
+time: 349.191902 seconds	entropy: 4.531190	iters: 13
+
+
+With 1000 clusters
+Set up in 0.665964 seconds
+Set up in 0.000023 seconds
+++ initialization in 102.339199 seconds
+First assignment in 97.769587 seconds
+Distances in 0.000966 seconds
+Average distance in 0.000638 seconds
+Sensitivities in 0.003485 seconds
+Freed arrays in 0.000020 seconds
+Calculated sensitivities in 200.114163 seconds
+Random sampling in 9.829561 seconds
+Found coreset indices in 209.943759 seconds
+Built coreset arrays in 0.016983 seconds
+Ran k-means in coreset in 51.201017 seconds
+Assigned whole set in 97.087500 seconds
+Freed data in 0.023217 seconds
+0 elements with invalid clusters
+0 clusters with no elements
+time: 358.938625 seconds	entropy: 4.532475	iters: 17
+
+
+With 1000 clusters
+Set up in 0.673463 seconds
+Set up in 0.000017 seconds
+++ initialization in 102.444367 seconds
+First assignment in 97.623756 seconds
+Distances in 0.000618 seconds
+Average distance in 0.000640 seconds
+Sensitivities in 0.003603 seconds
+Freed arrays in 0.000022 seconds
+Calculated sensitivities in 200.073161 seconds
+Random sampling in 9.858992 seconds
+Found coreset indices in 209.932196 seconds
+Built coreset arrays in 0.015722 seconds
+Ran k-means in coreset in 42.585061 seconds
+Assigned whole set in 97.065212 seconds
+Freed data in 0.025144 seconds
+0 elements with invalid clusters
+0 clusters with no elements
+time: 350.296954 seconds	entropy: 4.533766	iters: 14
+
+
+With 1000 clusters
+Set up in 0.671018 seconds
+Set up in 0.000024 seconds
+++ initialization in 103.059658 seconds
+First assignment in 97.444318 seconds
+Distances in 0.003941 seconds
+Average distance in 0.000681 seconds
+Sensitivities in 0.003648 seconds
+Freed arrays in 0.000012 seconds
+Calculated sensitivities in 200.512502 seconds
+Random sampling in 9.864650 seconds
+Found coreset indices in 210.377195 seconds
+Built coreset arrays in 0.075931 seconds
+Ran k-means in coreset in 45.490124 seconds
+Assigned whole set in 98.936429 seconds
+Freed data in 0.042503 seconds
+0 elements with invalid clusters
+0 clusters with no elements
+time: 355.593422 seconds	entropy: 4.535487	iters: 15
+
+
+With 1000 clusters
+Set up in 0.742825 seconds
+Set up in 0.000044 seconds
+++ initialization in 102.148487 seconds
+First assignment in 97.306553 seconds
+Distances in 0.000660 seconds
+Average distance in 0.000658 seconds
+Sensitivities in 0.003697 seconds
+Freed arrays in 0.000012 seconds
+Calculated sensitivities in 199.460293 seconds
+Random sampling in 9.878372 seconds
+Found coreset indices in 209.338708 seconds
+Built coreset arrays in 0.017385 seconds
+Ran k-means in coreset in 57.164490 seconds
+Assigned whole set in 97.607664 seconds
+Freed data in 0.026903 seconds
+0 elements with invalid clusters
+0 clusters with no elements
+time: 364.898152 seconds	entropy: 4.530007	iters: 19
+
+
+With 1000 clusters
+Set up in 0.665547 seconds
+Set up in 0.000025 seconds
+++ initialization in 101.548866 seconds
+First assignment in 97.251276 seconds
+Distances in 0.000647 seconds
+Average distance in 0.000637 seconds
+Sensitivities in 0.003668 seconds
+Freed arrays in 0.000019 seconds
+Calculated sensitivities in 198.805298 seconds
+Random sampling in 9.773378 seconds
+Found coreset indices in 208.578718 seconds
+Built coreset arrays in 0.023921 seconds
+Ran k-means in coreset in 42.839133 seconds
+Assigned whole set in 97.197813 seconds
+Freed data in 0.036838 seconds
+0 elements with invalid clusters
+0 clusters with no elements
+time: 349.342194 seconds	entropy: 4.535894	iters: 14
+
+
+With 1000 clusters
+Set up in 0.684077 seconds
+Set up in 0.000069 seconds
+++ initialization in 102.276961 seconds
+First assignment in 97.301678 seconds
+Distances in 0.001472 seconds
+Average distance in 0.000658 seconds
+Sensitivities in 0.003376 seconds
+Freed arrays in 0.000038 seconds
+Calculated sensitivities in 199.584471 seconds
+Random sampling in 9.833836 seconds
+Found coreset indices in 209.418360 seconds
+Built coreset arrays in 0.052859 seconds
+Ran k-means in coreset in 45.671710 seconds
+Assigned whole set in 96.350969 seconds
+Freed data in 0.024987 seconds
+0 elements with invalid clusters
+0 clusters with no elements
+time: 352.203166 seconds	entropy: 4.537793	iters: 15
+
+
+With 1000 clusters
+Set up in 0.668767 seconds
+Set up in 0.000021 seconds
+++ initialization in 102.060011 seconds
+First assignment in 96.540532 seconds
+Distances in 0.000675 seconds
+Average distance in 0.001299 seconds
+Sensitivities in 0.005176 seconds
+Freed arrays in 0.000027 seconds
+Calculated sensitivities in 198.607899 seconds
+Random sampling in 9.905387 seconds
+Found coreset indices in 208.513320 seconds
+Built coreset arrays in 0.037136 seconds
+Ran k-means in coreset in 57.028141 seconds
+Assigned whole set in 96.243230 seconds
+Freed data in 0.026081 seconds
+0 elements with invalid clusters
+0 clusters with no elements
+time: 362.516864 seconds	entropy: 4.534890	iters: 19
+
+
+With 1000 clusters
+Set up in 0.687054 seconds
+Set up in 0.000022 seconds
+++ initialization in 101.358715 seconds
+First assignment in 96.360410 seconds
+Distances in 0.000630 seconds
+Average distance in 0.000640 seconds
+Sensitivities in 0.003433 seconds
+Freed arrays in 0.000020 seconds
+Calculated sensitivities in 197.724006 seconds
+Random sampling in 9.841666 seconds
+Found coreset indices in 207.565708 seconds
+Built coreset arrays in 0.010795 seconds
+Ran k-means in coreset in 59.424709 seconds
+Assigned whole set in 97.123106 seconds
+Freed data in 0.029345 seconds
+0 elements with invalid clusters
+0 clusters with no elements
+time: 364.840899 seconds	entropy: 4.530830	iters: 20
+
+
+With 1000 clusters
+Set up in 0.676691 seconds
+Set up in 0.000025 seconds
+++ initialization in 101.673505 seconds
+First assignment in 96.363513 seconds
+Distances in 0.000652 seconds
+Average distance in 0.000639 seconds
+Sensitivities in 0.003439 seconds
+Freed arrays in 0.000033 seconds
+Calculated sensitivities in 198.041976 seconds
+Random sampling in 9.827160 seconds
+Found coreset indices in 207.869166 seconds
+Built coreset arrays in 0.028261 seconds
+Ran k-means in coreset in 39.422399 seconds
+Assigned whole set in 96.609702 seconds
+Freed data in 0.045519 seconds
+0 elements with invalid clusters
+0 clusters with no elements
+time: 344.651918 seconds	entropy: 4.535595	iters: 13
+
+
+With 1000 clusters
+Set up in 0.697171 seconds
+Set up in 0.000016 seconds
+++ initialization in 100.878375 seconds
+First assignment in 95.784500 seconds
+Distances in 0.001000 seconds
+Average distance in 0.000992 seconds
+Sensitivities in 0.003778 seconds
+Freed arrays in 0.000019 seconds
+Calculated sensitivities in 196.668843 seconds
+Random sampling in 9.806371 seconds
+Found coreset indices in 206.475291 seconds
+Built coreset arrays in 0.010144 seconds
+Ran k-means in coreset in 50.938682 seconds
+Assigned whole set in 95.978032 seconds
+Freed data in 0.026191 seconds
+0 elements with invalid clusters
+0 clusters with no elements
+time: 354.125691 seconds	entropy: 4.533181	iters: 17
+
+
+With 1000 clusters
+Set up in 0.678563 seconds
+Set up in 0.000020 seconds
+++ initialization in 100.183436 seconds
+First assignment in 96.970787 seconds
+Distances in 0.002910 seconds
+Average distance in 0.000644 seconds
+Sensitivities in 0.003797 seconds
+Freed arrays in 0.000032 seconds
+Calculated sensitivities in 197.161818 seconds
+Random sampling in 9.868731 seconds
+Found coreset indices in 207.030595 seconds
+Built coreset arrays in 0.041764 seconds
+Ran k-means in coreset in 42.584316 seconds
+Assigned whole set in 96.158888 seconds
+Freed data in 0.023586 seconds
+0 elements with invalid clusters
+0 clusters with no elements
+time: 346.517880 seconds	entropy: 4.535458	iters: 14
+
+
+With 1000 clusters
+Set up in 0.663810 seconds
+Set up in 0.000026 seconds
+++ initialization in 101.035322 seconds
+First assignment in 96.835691 seconds
+Distances in 0.001409 seconds
+Average distance in 0.000637 seconds
+Sensitivities in 0.003450 seconds
+Freed arrays in 0.000041 seconds
+Calculated sensitivities in 197.876762 seconds
+Random sampling in 9.754355 seconds
+Found coreset indices in 207.631149 seconds
+Built coreset arrays in 0.048598 seconds
+Ran k-means in coreset in 45.606864 seconds
+Assigned whole set in 96.892029 seconds
+Freed data in 0.025277 seconds
+0 elements with invalid clusters
+0 clusters with no elements
+time: 350.867926 seconds	entropy: 4.534191	iters: 15
+
+
+With 1000 clusters
+Set up in 0.677405 seconds
+Set up in 0.000068 seconds
+++ initialization in 101.550956 seconds
+First assignment in 97.040327 seconds
+Distances in 0.000839 seconds
+Average distance in 0.000636 seconds
+Sensitivities in 0.003450 seconds
+Freed arrays in 0.000020 seconds
+Calculated sensitivities in 198.596533 seconds
+Random sampling in 9.785728 seconds
+Found coreset indices in 208.382294 seconds
+Built coreset arrays in 0.043906 seconds
+Ran k-means in coreset in 50.903752 seconds
+Assigned whole set in 96.719804 seconds
+Freed data in 0.026767 seconds
+0 elements with invalid clusters
+0 clusters with no elements
+time: 356.754111 seconds	entropy: 4.532145	iters: 17
+
+
+With 1000 clusters
+Set up in 0.678578 seconds
+Set up in 0.000019 seconds
+++ initialization in 102.397350 seconds
+First assignment in 96.423772 seconds
+Distances in 0.000617 seconds
+Average distance in 0.000637 seconds
+Sensitivities in 0.003447 seconds
+Freed arrays in 0.000019 seconds
+Calculated sensitivities in 198.825983 seconds
+Random sampling in 9.981816 seconds
+Found coreset indices in 208.807840 seconds
+Built coreset arrays in 0.016235 seconds
+Ran k-means in coreset in 42.572050 seconds
+Assigned whole set in 97.201187 seconds
+Freed data in 0.025259 seconds
+0 elements with invalid clusters
+0 clusters with no elements
+time: 349.301330 seconds	entropy: 4.533484	iters: 14
+
+
+With 1000 clusters
+Set up in 0.674447 seconds
+Set up in 0.000021 seconds
+++ initialization in 101.603040 seconds
+First assignment in 96.619827 seconds
+Distances in 0.001502 seconds
+Average distance in 0.001291 seconds
+Sensitivities in 0.005245 seconds
+Freed arrays in 0.000016 seconds
+Calculated sensitivities in 198.231108 seconds
+Random sampling in 9.845455 seconds
+Found coreset indices in 208.076606 seconds
+Built coreset arrays in 0.038656 seconds
+Ran k-means in coreset in 59.598318 seconds
+Assigned whole set in 96.558488 seconds
+Freed data in 0.022942 seconds
+0 elements with invalid clusters
+0 clusters with no elements
+time: 364.969648 seconds	entropy: 4.534584	iters: 20
+
+
+With 1000 clusters
+Set up in 0.683368 seconds
+Set up in 0.000020 seconds
+++ initialization in 101.564122 seconds
+First assignment in 96.155470 seconds
+Distances in 0.000710 seconds
+Average distance in 0.000637 seconds
+Sensitivities in 0.003475 seconds
+Freed arrays in 0.000021 seconds
+Calculated sensitivities in 197.724590 seconds
+Random sampling in 9.834233 seconds
+Found coreset indices in 207.558854 seconds
+Built coreset arrays in 0.017947 seconds
+Ran k-means in coreset in 45.779973 seconds
+Assigned whole set in 97.026654 seconds
+Freed data in 0.028143 seconds
+0 elements with invalid clusters
+0 clusters with no elements
+time: 351.095131 seconds	entropy: 4.533523	iters: 15
+
+
+With 1000 clusters
+Set up in 0.683549 seconds
+Set up in 0.000018 seconds
+++ initialization in 101.023104 seconds
+First assignment in 96.787462 seconds
+Distances in 0.004211 seconds
+Average distance in 0.000637 seconds
+Sensitivities in 0.006716 seconds
+Freed arrays in 0.000123 seconds
+Calculated sensitivities in 197.822525 seconds
+Random sampling in 9.906870 seconds
+Found coreset indices in 207.729444 seconds
+Built coreset arrays in 0.065654 seconds
+Ran k-means in coreset in 33.868791 seconds
+Assigned whole set in 96.492017 seconds
+Freed data in 0.023552 seconds
+0 elements with invalid clusters
+0 clusters with no elements
+time: 338.863187 seconds	entropy: 4.532095	iters: 11
+
+
+With 2000 clusters
+Set up in 0.675559 seconds
+Set up in 0.000063 seconds
+++ initialization in 203.470852 seconds
+First assignment in 194.214819 seconds
+Distances in 0.002195 seconds
+Average distance in 0.000636 seconds
+Sensitivities in 0.003472 seconds
+Freed arrays in 0.000565 seconds
+Calculated sensitivities in 397.692812 seconds
+Random sampling in 9.799719 seconds
+Found coreset indices in 407.492571 seconds
+Built coreset arrays in 0.064067 seconds
+Ran k-means in coreset in 62.326966 seconds
+Assigned whole set in 193.712009 seconds
+Freed data in 0.033397 seconds
+0 elements with invalid clusters
+0 clusters with no elements
+time: 664.304843 seconds	entropy: 4.516688	iters: 10
+
+
+With 2000 clusters
+Set up in 0.659813 seconds
+Set up in 0.000005 seconds
+++ initialization in 204.299548 seconds
+First assignment in 192.919592 seconds
+Distances in 0.002344 seconds
+Average distance in 0.000641 seconds
+Sensitivities in 0.003473 seconds
+Freed arrays in 0.000510 seconds
+Calculated sensitivities in 397.226322 seconds
+Random sampling in 9.803362 seconds
+Found coreset indices in 407.029722 seconds
+Built coreset arrays in 0.053641 seconds
+Ran k-means in coreset in 73.328297 seconds
+Assigned whole set in 193.298035 seconds
+Freed data in 0.029823 seconds
+0 elements with invalid clusters
+0 clusters with no elements
+time: 674.399534 seconds	entropy: 4.514393	iters: 12
+
+
+With 2000 clusters
+Set up in 0.669367 seconds
+Set up in 0.000009 seconds
+++ initialization in 202.459053 seconds
+First assignment in 192.559503 seconds
+Distances in 0.000724 seconds
+Average distance in 0.000639 seconds
+Sensitivities in 0.003479 seconds
+Freed arrays in 0.000488 seconds
+Calculated sensitivities in 395.024082 seconds
+Random sampling in 9.887859 seconds
+Found coreset indices in 404.911982 seconds
+Built coreset arrays in 0.058436 seconds
+Ran k-means in coreset in 79.110477 seconds
+Assigned whole set in 193.898344 seconds
+Freed data in 0.029125 seconds
+0 elements with invalid clusters
+0 clusters with no elements
+time: 678.677984 seconds	entropy: 4.513836	iters: 13
+
+
+With 2000 clusters
+Set up in 0.677141 seconds
+Set up in 0.000070 seconds
+++ initialization in 202.278738 seconds
+First assignment in 193.485047 seconds
+Distances in 0.002960 seconds
+Average distance in 0.000658 seconds
+Sensitivities in 0.003474 seconds
+Freed arrays in 0.000580 seconds
+Calculated sensitivities in 395.771798 seconds
+Random sampling in 9.728391 seconds
+Found coreset indices in 405.500239 seconds
+Built coreset arrays in 0.070148 seconds
+Ran k-means in coreset in 79.301724 seconds
+Assigned whole set in 193.550578 seconds
+Freed data in 0.029959 seconds
+0 elements with invalid clusters
+0 clusters with no elements
+time: 679.130030 seconds	entropy: 4.517723	iters: 13
+
+
+With 2000 clusters
+Set up in 0.669728 seconds
+Set up in 0.000006 seconds
+++ initialization in 202.565484 seconds
+First assignment in 194.211004 seconds
+Distances in 0.003055 seconds
+Average distance in 0.000638 seconds
+Sensitivities in 0.003426 seconds
+Freed arrays in 0.000501 seconds
+Calculated sensitivities in 396.784333 seconds
+Random sampling in 9.748989 seconds
+Found coreset indices in 406.533369 seconds
+Built coreset arrays in 0.087921 seconds
+Ran k-means in coreset in 79.739740 seconds
+Assigned whole set in 193.929088 seconds
+Freed data in 0.027178 seconds
+0 elements with invalid clusters
+0 clusters with no elements
+time: 680.987227 seconds	entropy: 4.514627	iters: 13
+
+
+With 2000 clusters
+Set up in 0.658221 seconds
+Set up in 0.000005 seconds
+++ initialization in 201.903729 seconds
+First assignment in 192.258807 seconds
+Distances in 0.001423 seconds
+Average distance in 0.001284 seconds
+Sensitivities in 0.004487 seconds
+Freed arrays in 0.000639 seconds
+Calculated sensitivities in 394.170548 seconds
+Random sampling in 9.745453 seconds
+Found coreset indices in 403.916044 seconds
+Built coreset arrays in 0.019991 seconds
+Ran k-means in coreset in 67.785534 seconds
+Assigned whole set in 194.153741 seconds
+Freed data in 0.032932 seconds
+0 elements with invalid clusters
+0 clusters with no elements
+time: 666.566650 seconds	entropy: 4.517853	iters: 11
+
+
+With 2000 clusters
+Set up in 0.678276 seconds
+Set up in 0.000005 seconds
+++ initialization in 203.140717 seconds
+First assignment in 193.901005 seconds
+Distances in 0.001159 seconds
+Average distance in 0.000638 seconds
+Sensitivities in 0.003479 seconds
+Freed arrays in 0.000621 seconds
+Calculated sensitivities in 397.047788 seconds
+Random sampling in 9.816530 seconds
+Found coreset indices in 406.864370 seconds
+Built coreset arrays in 0.052999 seconds
+Ran k-means in coreset in 51.071553 seconds
+Assigned whole set in 193.231761 seconds
+Freed data in 0.025001 seconds
+0 elements with invalid clusters
+0 clusters with no elements
+time: 651.924132 seconds	entropy: 4.516925	iters: 8
+
+
+With 2000 clusters
+Set up in 0.658112 seconds
+Set up in 0.000006 seconds
+++ initialization in 202.792440 seconds
+First assignment in 193.641011 seconds
+Distances in 0.001168 seconds
+Average distance in 0.000640 seconds
+Sensitivities in 0.005236 seconds
+Freed arrays in 0.000804 seconds
+Calculated sensitivities in 396.441483 seconds
+Random sampling in 9.810099 seconds
+Found coreset indices in 406.251628 seconds
+Built coreset arrays in 0.024941 seconds
+Ran k-means in coreset in 79.243038 seconds
+Assigned whole set in 193.211978 seconds
+Freed data in 0.027338 seconds
+0 elements with invalid clusters
+0 clusters with no elements
+time: 679.417222 seconds	entropy: 4.514388	iters: 13
+
+
+With 2000 clusters
+Set up in 0.670335 seconds
+Set up in 0.000027 seconds
+++ initialization in 202.942877 seconds
+First assignment in 192.946465 seconds
+Distances in 0.000820 seconds
+Average distance in 0.000635 seconds
+Sensitivities in 0.006256 seconds
+Freed arrays in 0.000685 seconds
+Calculated sensitivities in 395.897946 seconds
+Random sampling in 9.769262 seconds
+Found coreset indices in 405.667246 seconds
+Built coreset arrays in 0.028506 seconds
+Ran k-means in coreset in 74.513570 seconds
+Assigned whole set in 193.264890 seconds
+Freed data in 0.026290 seconds
+0 elements with invalid clusters
+0 clusters with no elements
+time: 674.171036 seconds	entropy: 4.513298	iters: 12
+
+
+With 2000 clusters
+Set up in 0.688101 seconds
+Set up in 0.000005 seconds
+++ initialization in 203.297747 seconds
+First assignment in 193.370146 seconds
+Distances in 0.003301 seconds
+Average distance in 0.001278 seconds
+Sensitivities in 0.004465 seconds
+Freed arrays in 0.000732 seconds
+Calculated sensitivities in 396.677858 seconds
+Random sampling in 9.860843 seconds
+Found coreset indices in 406.538754 seconds
+Built coreset arrays in 0.040107 seconds
+Ran k-means in coreset in 50.787552 seconds
+Assigned whole set in 193.081327 seconds
+Freed data in 0.024666 seconds
+0 elements with invalid clusters
+0 clusters with no elements
+time: 651.160702 seconds	entropy: 4.519547	iters: 8
+
+
+With 2000 clusters
+Set up in 0.665065 seconds
+Set up in 0.000055 seconds
+++ initialization in 202.060645 seconds
+First assignment in 193.025742 seconds
+Distances in 0.000743 seconds
+Average distance in 0.000637 seconds
+Sensitivities in 0.003409 seconds
+Freed arrays in 0.000415 seconds
+Calculated sensitivities in 395.091801 seconds
+Random sampling in 9.779255 seconds
+Found coreset indices in 404.871097 seconds
+Built coreset arrays in 0.033360 seconds
+Ran k-means in coreset in 96.130793 seconds
+Assigned whole set in 193.463256 seconds
+Freed data in 0.031145 seconds
+0 elements with invalid clusters
+0 clusters with no elements
+time: 695.194903 seconds	entropy: 4.514550	iters: 16
+
+
+With 2000 clusters
+Set up in 0.662118 seconds
+Set up in 0.000009 seconds
+++ initialization in 202.991350 seconds
+First assignment in 194.167291 seconds
+Distances in 0.001528 seconds
+Average distance in 0.000600 seconds
+Sensitivities in 0.005003 seconds
+Freed arrays in 0.000485 seconds
+Calculated sensitivities in 397.166482 seconds
+Random sampling in 9.803926 seconds
+Found coreset indices in 406.970460 seconds
+Built coreset arrays in 0.062158 seconds
+Ran k-means in coreset in 68.197946 seconds
+Assigned whole set in 194.721277 seconds
+Freed data in 0.034676 seconds
+0 elements with invalid clusters
+0 clusters with no elements
+time: 670.648842 seconds	entropy: 4.513183	iters: 11
+
+
+With 2000 clusters
+Set up in 0.670840 seconds
+Set up in 0.000047 seconds
+++ initialization in 203.373437 seconds
+First assignment in 193.681590 seconds
+Distances in 0.002705 seconds
+Average distance in 0.000650 seconds
+Sensitivities in 0.005126 seconds
+Freed arrays in 0.000792 seconds
+Calculated sensitivities in 397.064593 seconds
+Random sampling in 9.841413 seconds
+Found coreset indices in 406.906087 seconds
+Built coreset arrays in 0.047564 seconds
+Ran k-means in coreset in 74.142444 seconds
+Assigned whole set in 194.049335 seconds
+Freed data in 0.026069 seconds
+0 elements with invalid clusters
+0 clusters with no elements
+time: 675.842566 seconds	entropy: 4.511442	iters: 12
+
+
+With 2000 clusters
+Set up in 0.697044 seconds
+Set up in 0.000038 seconds
+++ initialization in 203.090422 seconds
+First assignment in 193.251618 seconds
+Distances in 0.002860 seconds
+Average distance in 0.000642 seconds
+Sensitivities in 0.004872 seconds
+Freed arrays in 0.000821 seconds
+Calculated sensitivities in 396.351510 seconds
+Random sampling in 9.940364 seconds
+Found coreset indices in 406.291912 seconds
+Built coreset arrays in 0.084803 seconds
+Ran k-means in coreset in 79.453838 seconds
+Assigned whole set in 193.206585 seconds
+Freed data in 0.027314 seconds
+0 elements with invalid clusters
+0 clusters with no elements
+time: 679.761680 seconds	entropy: 4.519158	iters: 13
+
+
+With 2000 clusters
+Set up in 0.676310 seconds
+Set up in 0.000122 seconds
+++ initialization in 203.131704 seconds
+First assignment in 192.899573 seconds
+Distances in 0.001156 seconds
+Average distance in 0.000637 seconds
+Sensitivities in 0.006834 seconds
+Freed arrays in 0.001670 seconds
+Calculated sensitivities in 396.042071 seconds
+Random sampling in 9.795749 seconds
+Found coreset indices in 405.837877 seconds
+Built coreset arrays in 0.043037 seconds
+Ran k-means in coreset in 78.350892 seconds
+Assigned whole set in 193.439315 seconds
+Freed data in 0.031447 seconds
+0 elements with invalid clusters
+0 clusters with no elements
+time: 678.379081 seconds	entropy: 4.515376	iters: 13
+
+
+With 2000 clusters
+Set up in 0.670988 seconds
+Set up in 0.000006 seconds
+++ initialization in 202.073566 seconds
+First assignment in 192.943604 seconds
+Distances in 0.000937 seconds
+Average distance in 0.000636 seconds
+Sensitivities in 0.003428 seconds
+Freed arrays in 0.000593 seconds
+Calculated sensitivities in 395.022909 seconds
+Random sampling in 9.791212 seconds
+Found coreset indices in 404.814162 seconds
+Built coreset arrays in 0.045317 seconds
+Ran k-means in coreset in 73.317389 seconds
+Assigned whole set in 192.841042 seconds
+Freed data in 0.025759 seconds
+0 elements with invalid clusters
+0 clusters with no elements
+time: 671.714829 seconds	entropy: 4.512410	iters: 12
+
+
+With 2000 clusters
+Set up in 0.665323 seconds
+Set up in 0.000163 seconds
+++ initialization in 201.591815 seconds
+First assignment in 192.654777 seconds
+Distances in 0.001967 seconds
+Average distance in 0.000633 seconds
+Sensitivities in 0.003509 seconds
+Freed arrays in 0.000617 seconds
+Calculated sensitivities in 394.253690 seconds
+Random sampling in 9.864612 seconds
+Found coreset indices in 404.118355 seconds
+Built coreset arrays in 0.040729 seconds
+Ran k-means in coreset in 68.796772 seconds
+Assigned whole set in 193.568859 seconds
+Freed data in 0.031954 seconds
+0 elements with invalid clusters
+0 clusters with no elements
+time: 667.222230 seconds	entropy: 4.514770	iters: 11
+
+
+With 2000 clusters
+Set up in 0.670145 seconds
+Set up in 0.000022 seconds
+++ initialization in 202.884819 seconds
+First assignment in 192.553727 seconds
+Distances in 0.000655 seconds
+Average distance in 0.000644 seconds
+Sensitivities in 0.003449 seconds
+Freed arrays in 0.000528 seconds
+Calculated sensitivities in 395.443992 seconds
+Random sampling in 9.686937 seconds
+Found coreset indices in 405.130973 seconds
+Built coreset arrays in 0.044018 seconds
+Ran k-means in coreset in 56.403678 seconds
+Assigned whole set in 193.273771 seconds
+Freed data in 0.027039 seconds
+0 elements with invalid clusters
+0 clusters with no elements
+time: 655.549794 seconds	entropy: 4.515935	iters: 9
+
+
+With 2000 clusters
+Set up in 0.676514 seconds
+Set up in 0.000218 seconds
+++ initialization in 203.472545 seconds
+First assignment in 193.522917 seconds
+Distances in 0.002333 seconds
+Average distance in 0.000635 seconds
+Sensitivities in 0.005906 seconds
+Freed arrays in 0.000707 seconds
+Calculated sensitivities in 397.005456 seconds
+Random sampling in 9.860507 seconds
+Found coreset indices in 406.866000 seconds
+Built coreset arrays in 0.074139 seconds
+Ran k-means in coreset in 68.047367 seconds
+Assigned whole set in 194.306923 seconds
+Freed data in 0.035927 seconds
+0 elements with invalid clusters
+0 clusters with no elements
+time: 670.007116 seconds	entropy: 4.518820	iters: 11
+
+
+With 2000 clusters
+Set up in 0.667761 seconds
+Set up in 0.000119 seconds
+++ initialization in 202.898450 seconds
+First assignment in 193.961544 seconds
+Distances in 0.001519 seconds
+Average distance in 0.001297 seconds
+Sensitivities in 0.004067 seconds
+Freed arrays in 0.000495 seconds
+Calculated sensitivities in 396.867763 seconds
+Random sampling in 9.787871 seconds
+Found coreset indices in 406.655677 seconds
+Built coreset arrays in 0.040242 seconds
+Ran k-means in coreset in 73.946717 seconds
+Assigned whole set in 194.191674 seconds
+Freed data in 0.030153 seconds
+0 elements with invalid clusters
+0 clusters with no elements
+time: 675.532421 seconds	entropy: 4.516331	iters: 12

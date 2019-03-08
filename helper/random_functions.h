@@ -45,12 +45,14 @@ int* create_random_int_array(int n, int dim, int max) {
 
 int* random_sampling(double *values, int n, int k, bool replace) {
   int i, j, *ans = (int *)malloc(sizeof(int) * k);
-  double *probs = normalize_vector(values, sum(values, n), n);
+  double *probs = (double *)malloc(sizeof(double) * n);
+  copy_to(values, probs, n);
+  normalize_vector(probs, sum(probs, n), n);
   for (i = 0; i < k; i++) {
     ans[i] = find_next_number(probs, n);
     if (!replace) {
       probs[ans[i]] = 0;
-      probs = normalize_vector(probs, sum(probs, n), n);
+      normalize_vector(probs, sum(probs, n), n);
     }
   }
   free(probs);

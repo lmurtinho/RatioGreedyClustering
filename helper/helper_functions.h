@@ -233,13 +233,15 @@ void check_assignment (int *assigned, int min_k, int max_k, int n) {
       clusters[min_k + assigned[i]]++;
     }
   }
-  printf("%d issues found\n", issues);
+  printf("%d elements with invalid clusters\n", issues);
 
+  issues = 0;
   for (i = 0; i < k; i++) {
     if (clusters[i] == 0) {
-      printf("cluster %d has no elements\n", i);
+      issues++;
     }
   }
+  printf("%d clusters with no elements\n", issues);
 
   free(clusters);
 }

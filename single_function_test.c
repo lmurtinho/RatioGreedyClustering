@@ -2,19 +2,21 @@
 #include "helper/random_functions.h"
 #include "dhillon/dhillon.h"
 #include "dominance/dominance.h"
+#include "coresets/coresets.h"
 #include <stdio.h>
 
 int main () {
-  int i, k, n = 170946, dim=103, /* n = 51840, dim = 20, */
+  int i, k, /* n = 170946, dim=103, */ n = 51840, dim = 20,
     max_iter=100, iter[] = {0};
-  int size_k = 29;
-  int k_list[] = {2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16,
-                  17, 18, 19, 20, 30, 40, 50, 100, 200, 300, 400, 500,
-                  1000, 2000};
+  int size_k = 40;
+  int k_list[] = {1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000,
+                  1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000,
+                  2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000,
+                  2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000};
 
   clock_t start, end;
 
-  double *data = data_from_csv("rcv1.csv", n, dim);
+  double *data = data_from_csv("ng20.csv", n, dim);
   printf("got data\n");
   k = k_list[size_k-1];
   double *clusters = (double *)malloc(sizeof(double)*k*dim);
@@ -22,7 +24,7 @@ int main () {
 
   FILE *results, *f;
 
-  results = fopen("rg_rcv1_results.csv", "w");
+  results = fopen("co_ng20_results.csv", "w");
   fprintf(results, "n_clusters,time,entropy,iterations");
   //fclose(times);
 
@@ -35,7 +37,8 @@ int main () {
     // printf("started\n");
 
     assigned =
-      rg_clustering(data, n, k, dim, 0, iter, cluster_assign_ext);
+      co_clustering(data, n, k, dim, 2500, 100, iter);
+      //rg_clustering(data, n, k, dim, 0, iter, cluster_assign_ext);
       // di_clustering(data, n, k, dim, 100, iter,
       // f, f, f, start);
     end = clock();

@@ -90,22 +90,44 @@ double* get_distances_per_cluster(double *distances, int *assigned,
 double* get_sensitivities(double *data, double *norm_data, double *data_logs,
     double *clusters, int n, int k, int dim) {
 
+  clock_t start = clock(), end;
   int i, c;
   double v, alpha = 16 * (log2(k) + 2), // Step 1
     *ans = (double *)malloc(sizeof(double) * n),
     *cluster_logs = (double *)malloc(sizeof(double) * k * dim),
     *distances = (double *)malloc(sizeof(double) * n);
 
+    end = clock();
+    printf("Set up in %f seconds\n", (double) (end - start) / CLOCKS_PER_SEC);
+    start = clock();
+
   // Steps 2-3
   initial_pp(data, clusters, norm_data, data_logs, cluster_logs, distances,
     n, k, dim);
+
+  end = clock();
+  printf("++ initialization in %f seconds\n", (double) (end - start) / CLOCKS_PER_SEC);
+  start = clock();
+
   int *assigned = (int *)malloc(sizeof(int) * n);
   expectation(norm_data, data_logs, assigned, clusters, n, k, dim);
 
+  end = clock();
+  printf("First assignment in %f seconds\n", (double) (end - start) / CLOCKS_PER_SEC);
+  start = clock();
+
   double *distances_per_cluster = get_distances_per_cluster(distances, assigned,
-      n, k),
+      n, k);
     // Step 4
-    distance_avg = sum(distances) / n;
+  end = clock();
+  printf("Distances in %f seconds\n", (double) (end - start) / CLOCKS_PER_SEC);
+  start = clock();
+
+  double distance_avg = sum(distances, n) / n;
+
+  end = clock();
+  printf("Average distance in %f seconds\n", (double) (end - start) / CLOCKS_PER_SEC);
+  start = clock();
 
   // Steps 5-6
   for (i = 0; i < n; i ++) {
@@ -115,57 +137,97 @@ double* get_sensitivities(double *data, double *norm_data, double *data_logs,
     v += (4 * n) / k;
     ans[i] = v;
   }
-  free(norm_data);
-  free(data_logs);
-  free(clusters);
+
+  end = clock();
+  printf("Sensitivities in %f seconds\n", (double) (end - start) / CLOCKS_PER_SEC);
+  start = clock();
+
   free(assigned);
   free(cluster_logs);
   free(distances);
   free(distances_per_cluster);
+
+  end = clock();
+  printf("Freed arrays in %f seconds\n", (double) (end - start) / CLOCKS_PER_SEC);
+
   return ans;
 }
 
 int* coreset_construction(double *data, double *norm_data, double *data_logs,
     double *clusters, int n, int k, int dim, int m) {
+  clock_t start = clock(), end;
   double *sensitivities = get_sensitivities(data, norm_data, data_logs,
     clusters, n, k, dim);
-  return random_sampling(sensitivities, n, m, false);
+  end = clock();
+  printf("Calculated sensitivities in %f seconds\n", (double) (end - start) / CLOCKS_PER_SEC);
+
+  start = clock();
+  int *ans = random_sampling(sensitivities, n, m, false);
+  end = clock();
+  printf("Random sampling in %f seconds\n", (double) (end - start) / CLOCKS_PER_SEC);
+
+  return ans;
 }
 
-int* kmeans(double *data, double *norm_data, double *data_logs,
+void kmeans(double *data, double *norm_data, double *data_logs,
     double *clusters, int n, int k, int dim, int max_iter, int *iter) {
 
   int i, j, c, *assigned = (int *)malloc(sizeof(int) * n);
   fill_array_int(assigned, -1, n);
   iter[0] = 0;
+  // printf("\niter %d\n", iter[0]);
   bool changed = expectation(norm_data, data_logs, assigned, clusters,
     n, k, dim);
+  // check_assignment(assigned, 0, k, n);
   while(changed && (iter[0] < max_iter) ) {
     iter[0]++;
+    // printf("\niter %d\n", iter[0]);
     maximization(data, assigned, clusters, n, k, dim);
     changed = expectation(norm_data, data_logs, assigned, clusters, n, k, dim);
+    // check_assignment(assigned, 0, k, n);
   }
-  return assigned;
+  //printf("done\n\n");
 }
 
-int* coreset_clustering(double *data, int n, int k, int dim, int m,
+int* co_clustering(double *data, int n, int k, int dim, int m,
   int max_iter, int *iter) {
-  clock_t start = clock();
+  clock_t start = clock(), end;
   double *norm_data = get_norm_data(data, n, dim),
          *data_logs = get_logs_from_normal(norm_data, n * dim),
          *clusters  = (double *)malloc(sizeof(double) * k * dim);
+  end = clock();
+  printf("Set up in %f seconds\n", (double) (end - start) / CLOCKS_PER_SEC);
+  start = clock();
 
   int *coreset_indices = coreset_construction(data, norm_data, data_logs,
     clusters, n, k, dim, m);
+
+  end = clock();
+  printf("Found coreset indices in %f seconds\n", (double) (end - start) / CLOCKS_PER_SEC);
+  start = clock();
 
   double *coreset_data = get_indices(data, coreset_indices, n, dim, m);
   double *coreset_norm = get_indices(norm_data, coreset_indices, n, dim, m);
   double *coreset_logs = get_indices(data_logs, coreset_indices, n, dim, m);
 
-  int *coreset_assigned = kmeans(coreset_data, coreset_norm, coreset_logs,
-    clusters, m, k, dim, max_iter, iter);
+  end = clock();
+  printf("Built coreset arrays in %f seconds\n", (double) (end - start) / CLOCKS_PER_SEC);
+  start = clock();
+
+  kmeans(coreset_data, coreset_norm, coreset_logs, clusters, m, k, dim,
+    max_iter, iter);
+
+  end = clock();
+  printf("Ran k-means in coreset in %f seconds\n", (double) (end - start) / CLOCKS_PER_SEC);
+  start = clock();
+
+  // printf("kmeans done\n");
   int *assigned = (int *)malloc(sizeof(int) * n);
-  maximization(data, assigned, clusters, n, k, dim);
+  expectation(norm_data, data_logs, assigned, clusters, n, k, dim);
+
+  end = clock();
+  printf("Assigned whole set in %f seconds\n", (double) (end - start) / CLOCKS_PER_SEC);
+  start = clock();
 
   free(norm_data);
   free(data_logs);
@@ -174,7 +236,10 @@ int* coreset_clustering(double *data, int n, int k, int dim, int m,
   free(coreset_data);
   free(coreset_norm);
   free(coreset_logs);
-  free(coreset_assigned);
+
+  end = clock();
+  printf("Freed data in %f seconds\n", (double) (end - start) / CLOCKS_PER_SEC);
+
 
   return assigned;
 }

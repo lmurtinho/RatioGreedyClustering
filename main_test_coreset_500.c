@@ -13,9 +13,9 @@ int main (int argc, char *argv[]) {
                   1000, 2000};
   char *name = argv[1];
   char *data_file_name  = concat(name, ".csv");
-  char *times_file_name = concat(name, "_times.csv");
-  char *entrs_file_name = concat(name, "_entrs.csv");
-  char *iters_file_name = concat(name, "_iters.csv");
+  char *times_file_name = concat(name, "_CO_500_times.csv");
+  char *entrs_file_name = concat(name, "_CO_500_entrs.csv");
+  char *iters_file_name = concat(name, "_CO_500_iters.csv");
 
   clock_t start, end;
 
@@ -28,53 +28,37 @@ int main (int argc, char *argv[]) {
   FILE *times, *entrs, *iters;
 
   times = fopen(times_file_name, "w");
-  fprintf(times, "n_clusters,Random,RG,CO_2500,CO_5000,DI_init,DI_iter1,DI_iter5,DI_iter10,DI_final");
+  fprintf(times, "n_clusters,CO_500_init,CO_500_iter1,CO_500_iter5,CO_500_iter10,CO_500_final");
   //fclose(times);
 
   entrs = fopen(entrs_file_name, "w");
-  fprintf(entrs, "n_clusters,Random,RG,CO_2500,CO_5000,DI_init,DI_iter1,DI_iter5,DI_iter10,DI_final");
+  fprintf(entrs, "n_clusters,CO_500_init,CO_500_iter1,CO_500_iter5,CO_500_iter10,CO_500_final");
   //fclose(entrs);
 
   iters = fopen(iters_file_name, "w");
-  fprintf(iters, "n_clusters,Random,RG,CO_2500,CO_5000,DI_init,DI_iter1,DI_iter5,DI_iter10,DI_final");
+  fprintf(iters, "n_clusters,CO_500_init,CO_500_iter1,CO_500_iter5,CO_500_iter10,CO_500_final");
   //fclose(iters);
 
   for (i = 0; i < size_k; i++) {
     k = k_list[i];
     printf("\n\nWith %d clusters\n", k);
 
-    printf("Random clustering\n");
+    printf("CO clustering with 500 samples (init)\n");
     start = clock();
-    assigned = rd_clustering(data, n, k, dim, 0, iter);
+    assigned = co_clustering(data, n, k, dim, 500, 0, iter);
     end = clock();
     check_assignment(assigned, 0, k, n);
-    //times = fopen("new_times.csv", "w");
     fprintf(times, "\n%d,%f", k, ( (double)(end - start) ) / CLOCKS_PER_SEC);
-    //fclose(times);
     maximization(data, assigned, clusters, n, k, dim);
     fprintf(entrs, "\n%d,%f", k, partition_entropy(clusters, k, dim));
-    fprintf(iters, "\n%d,0", k);
-
+    fprintf(iters, "\n%d,%d", k, iter[0]);
     printf("time: %f seconds\t", ( (double)(end - start) ) / CLOCKS_PER_SEC);
     printf("entropy: %f\t", partition_entropy(clusters, k, dim));
-    printf("iters: 0\n");
+    printf("iters: %d\n", iter[0]);
 
-    printf("RG clustering\n");
+    printf("CO clustering with 500 samples (iter1)\n");
     start = clock();
-    assigned = rg_clustering(data, n, k, dim, 0, iter, cluster_assign_ext);
-    end = clock();
-    check_assignment(assigned, 0, k, n);
-    fprintf(times, ",%f", ( (double)(end - start) ) / CLOCKS_PER_SEC);
-    maximization(data, assigned, clusters, n, k, dim);
-    fprintf(entrs, ",%f", partition_entropy(clusters, k, dim));
-    fprintf(iters, ",0");
-    printf("time: %f seconds\t", ( (double)(end - start) ) / CLOCKS_PER_SEC);
-    printf("entropy: %f\t", partition_entropy(clusters, k, dim));
-    printf("iters: 0\n");
-
-    printf("CO clustering (m = 2500)\n");
-    start = clock();
-    assigned = co_clustering(data, n, k, dim, 2500, 100, iter);
+    assigned = co_clustering(data, n, k, dim, 500, 1, iter);
     end = clock();
     check_assignment(assigned, 0, k, n);
     fprintf(times, ",%f", ( (double)(end - start) ) / CLOCKS_PER_SEC);
@@ -85,9 +69,9 @@ int main (int argc, char *argv[]) {
     printf("entropy: %f\t", partition_entropy(clusters, k, dim));
     printf("iters: %d\n", iter[0]);
 
-    printf("CO clustering (m = 5000)\n");
+    printf("CO clustering with 500 samples (iter5)\n");
     start = clock();
-    assigned = co_clustering(data, n, k, dim, 5000, 100, iter);
+    assigned = co_clustering(data, n, k, dim, 500, 5, iter);
     end = clock();
     check_assignment(assigned, 0, k, n);
     fprintf(times, ",%f", ( (double)(end - start) ) / CLOCKS_PER_SEC);
@@ -98,9 +82,22 @@ int main (int argc, char *argv[]) {
     printf("entropy: %f\t", partition_entropy(clusters, k, dim));
     printf("iters: %d\n", iter[0]);
 
-    printf("DI clustering\n");
+    printf("CO clustering with 500 samples (iter10)\n");
     start = clock();
-    assigned = di_clustering(data, n, k, dim, 100, iter, times, entrs, iters, start);
+    assigned = co_clustering(data, n, k, dim, 500, 10, iter);
+    end = clock();
+    check_assignment(assigned, 0, k, n);
+    fprintf(times, ",%f", ( (double)(end - start) ) / CLOCKS_PER_SEC);
+    maximization(data, assigned, clusters, n, k, dim);
+    fprintf(entrs, ",%f", partition_entropy(clusters, k, dim));
+    fprintf(iters, ",%d", iter[0]);
+    printf("time: %f seconds\t", ( (double)(end - start) ) / CLOCKS_PER_SEC);
+    printf("entropy: %f\t", partition_entropy(clusters, k, dim));
+    printf("iters: %d\n", iter[0]);
+
+    printf("CO clustering with 500 samples (maxiter100)\n");
+    start = clock();
+    assigned = co_clustering(data, n, k, dim, 500, 100, iter);
     end = clock();
     check_assignment(assigned, 0, k, n);
     fprintf(times, ",%f", ( (double)(end - start) ) / CLOCKS_PER_SEC);
