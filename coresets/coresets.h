@@ -179,14 +179,41 @@ void kmeans(double *data, double *norm_data, double *data_logs,
   bool changed = expectation(norm_data, data_logs, assigned, clusters,
     n, k, dim);
   // check_assignment(assigned, 0, k, n);
+
+  clock_t start = clock();
+  int length = snprintf(NULL, 0, "coreset_%d_clusters_%lu.txt", k, start);
+  char *file_name = malloc(length + 1);
+  snprintf(file_name, length + 1, "coreset_%d_clusters_%lu.txt", k, start);
+  FILE *cluster_file = fopen(file_name, "w");
+  fprintf(cluster_file, "0");
+  for (i = 0; i < k * dim; i++) {
+    fprintf(cluster_file, ",%.24f", clusters[i]);
+  }
+  fprintf(cluster_file, "\n");
+
   while(changed && (iter[0] < max_iter) ) {
     iter[0]++;
     // printf("\niter %d\n", iter[0]);
     maximization(data, assigned, clusters, n, k, dim);
     changed = expectation(norm_data, data_logs, assigned, clusters, n, k, dim);
+
+    if ((iter[0] == 1) || (iter[0] == 5) || (iter[0] == 10)) {
+      fprintf(cluster_file, "%d", iter[0]);
+      for (i = 0; i < k * dim; i++) {
+        fprintf(cluster_file, ",%.24f", clusters[i]);
+      }
+      fprintf(cluster_file, "\n");
+    }
     // check_assignment(assigned, 0, k, n);
   }
+  fprintf(cluster_file, "%d", iter[0]);
+  for (i = 0; i < k * dim; i++) {
+    fprintf(cluster_file, ",%.24f", clusters[i]);
+  }
+  fprintf(cluster_file, "\n");
   //printf("done\n\n");
+  free(file_name);
+  fclose(cluster_file);
 }
 
 int* co_clustering(double *data, int n, int k, int dim, int m,

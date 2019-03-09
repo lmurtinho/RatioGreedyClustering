@@ -169,6 +169,49 @@ double* get_logs(double *a, int n, int dim) {
   return logs_a;
 }
 
+double* cluster_from_csv(char *file_name, int k, int dim, char iter) {
+  char ch, *ptr;
+  double num;
+  int i = 0, j = 0;
+
+  char *a = (char *)malloc(sizeof(char) * 30);
+  double *ans = (double *)malloc(sizeof(double) * k * dim);
+  FILE *fp = fopen(file_name, "r");
+
+  // while not on line of correct iter number
+  while ( (ch = getc(fp)) != iter) {
+    // go to next line
+    while ( (ch = getc(fp)) != '\n') {
+      ;
+    }
+  }
+  // skip next char (separator)
+  ch = getc(fp);
+  printf("%c\n", ch);
+  // while not on end of line
+  while ( (ch = getc(fp)) != '\n') {
+    if ( (ch != ',') ) {
+      a[i] = ch;
+      i++;
+    }
+    else {
+      a[i] = '\0';
+      num = atof(a);
+      ans[j] = num;
+      j++;
+      i = 0;
+    }
+  }
+
+  a[i] = '\0';
+  num = atof(a);
+  ans[j] = num;
+
+  fclose(fp);
+  free(a);
+  return ans;
+}
+
 double* data_from_csv(char* filename, int n, int dim) {
   char ch, *ptr;
   FILE *fp;
