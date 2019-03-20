@@ -6,7 +6,7 @@ rcv1.csv
 *.dSYM/
 *.xls
 *.xlsx
-.idea/
+idea/
 cmake-build-debug/
 trash/
 ct
