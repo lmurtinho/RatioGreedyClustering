@@ -2,4 +2,13 @@ maint
 .DS_Store
 ng20.csv
 rcv1.csv
-maint.dSYM/**
+*.pdf
+*.dSYM/
+*.xls
+*.xlsx
+idea/
+cmake-build-debug/
+trash/
+ct
+ctk
+fm

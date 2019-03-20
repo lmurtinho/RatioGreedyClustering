@@ -7,6 +7,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
+#include <unistd.h>
 #define BIG_DOUBLE (INFINITY)
 
 typedef struct HEAP {
@@ -20,6 +21,17 @@ typedef struct HEAP {
   int prev;
   int next;
 } HEAP;
+
+double find_min (double *a, int n) {
+  int i;
+  double ans = BIG_DOUBLE;
+  for (i = 0; i < n; i++) {
+    if (a[i] < ans) {
+      ans = a[i];
+    }
+  }
+  return ans;
+}
 
 double *cum_sum(double *a, int dim) {
   int i;
@@ -244,6 +256,31 @@ double* data_from_csv(char* filename, int n, int dim) {
   return data;
 }
 
+int last_experiment() {
+  char ch, *a = (char *)malloc(sizeof(char) * 30);
+  FILE *f = fopen("results.csv", "r");
+  int ans = 0, i;
+  while ( (ch = getc(f)) != EOF ) {
+    if (ch == '\n') {
+      if ( (ch = getc(f)) == EOF) {
+        break;
+      }
+      else {
+        i = 0;
+        a[i] = ch;
+        i++;
+        while ( (ch = getc(f) ) != ',') {
+          a[i] = ch;
+          i++;
+        }
+        a[i] = '\0';
+        ans = atoi(a);
+      }
+    }
+  }
+  return ans;
+}
+
 int compare(double *array, int i, int j) {
   int ans = 0;
   if (array[i] > array[j]) ans = 1;
@@ -296,6 +333,17 @@ char *concat (char *s1, char *s2) {
   strcat(ans, s2);
   ans[size-1] = '\0';
   return ans;
+}
+
+double min_value(double *data, int n, int dim) {
+  int i;
+  double m = data[0];
+  for (i = 1; i < n * dim; i++) {
+    if (data[i] < m) {
+      m = data[i];
+    }
+  }
+  return m;
 }
 
 double *get_indices(double *original, int *indices, int n, int dim, int k) {
