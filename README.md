@@ -32,7 +32,7 @@ The test file `main_test.c` tests all three algorithms on a single data set for 
 - `n_rows`: the humber of rows in the csv file
 - `n_cols`: the number of cols in the csv file
 
-If `test` is the name of the executable compiled from new_test.c, then `./test ng20 51480 20` will run the test on the `ng20.csv` file which can be obtained by running `make_ng20_data.py` (see above), while `rcv1 170946 103` will run the test on the provided `rcv1.csv` file. The results will be stored in files `dname_entrs.csv`, `dname_times.csv`, and `dname_iters.csv`, in the folder from which the function is called. The results for the initialization of the DITC algorithm will be stored as well as the results for the first, fifth, tenth, and final iterations of the algorithm.
+If `test` is the name of the executable compiled from new_test.c, then `./test ng20 51840 20` will run the test on the `ng20.csv` file which can be obtained by running `make_ng20_data.py` (see above), while `rcv1 170946 103` will run the test on the provided `rcv1.csv` file. The results will be stored in files `dname_entrs.csv`, `dname_times.csv`, and `dname_iters.csv`, in the folder from which the function is called. The results for the initialization of the DITC algorithm will be stored as well as the results for the first, fifth, tenth, and final iterations of the algorithm.
 
 The test file `single_function_test.c`can be used to manually test a single function in a single data set.
 
